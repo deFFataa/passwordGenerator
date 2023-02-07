@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="password.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <h1 class="white-text">Generate a</h1>
+      <h1 class="green-text">random password</h1>
+      <p>Never use an insecure password again.</p>
+      <button class="btn-generateOne" id="btn1" onclick="generatePassword()">Generate passwords</button>
+      <hr>
+      <div class="flex-row">
+        <p class="txt-password" id="passwordOne"></p>
+        <p class="txt-password" id="passwordTwo"></p>
+      </div>
+      <div class="flex-btn">
+        <div class="flex">
+          <button class="btn-password" onclick="copyPasswordOne()" id="copyPassOne"><i
+              class="fa-regular fa-copy"></i></i>
+            copy password</button>
+        </div>
+        <div class="flex">
+          <button class="btn-password" onclick="copyPasswordTwo()" id="copyPassTwo"><i class="fa-regular fa-copy"></i>
+            copy password</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="password.js"></script>
+</body>
+
+</html>
